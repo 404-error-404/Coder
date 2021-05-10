@@ -1,7 +1,5 @@
 package leetcode.So05;
 
-import java.util.Arrays;
-
 /**
  * 给你一个整数数组 bloomDay，以及两个整数 m 和 k 。
  *
@@ -28,8 +26,14 @@ public class So0509 {
     public int minDays(int[] bloomDay, int m, int k) {
         // 先检查花束总数能否制作m束花
         if(bloomDay.length < m*k) {return -1;}
-        int l = Arrays.stream(bloomDay).min().orElse(-1);
-        int r = Arrays.stream(bloomDay).max().orElse(-1);
+        // 流式编程求最小值：Arrays.stream(bloomDay).min().orElse(-1);
+        // 流式编程求最大值：Arrays.stream(bloomDay).max().orElse(-1);
+        // 但是流式编程求最值比自己写for循环要费时间
+        int l = 1;
+        int r = 1;
+        for(int i: bloomDay){
+            r = Math.max(i, r);
+        }
         while (l < r){
             int mid = (l+r) / 2;
             if(check(bloomDay, m, k, mid)){
