@@ -18,7 +18,18 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
+    /**
+     * 从数组转换为树
+     * -1表示对应的结点不存在
+     * @param arr 数组
+     * @return    树根结点
+     */
     public static TreeNode arrToTreeNode(int[] arr) {
+        if(arr[0] == -1){
+            System.out.println("根结点不为空");
+            return null;
+        }
         TreeNode root = new TreeNode(arr[0]);
         Queue<TreeNode> nodeQueue = new LinkedList<>();
         nodeQueue.add(root);
@@ -32,16 +43,20 @@ public class TreeNode {
             }
 
             int leftNumber = arr[index++];
-            node.left = new TreeNode(leftNumber);
-            nodeQueue.add(node.left);
+            if (leftNumber != -1){
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
 
-            if (index == arr.length) {
-                break;
+                if (index == arr.length) {
+                    break;
+                }
             }
 
             int rightNumber = arr[index++];
-            node.right = new TreeNode(rightNumber);
-            nodeQueue.add(node.right);
+            if (rightNumber!= -1){
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
         }
         return root;
     }
