@@ -40,7 +40,6 @@ public class So0510 {
     }
 
     /**
-     *
      * 将树的叶子序列转变到list中
      * @param root 树的根结点
      * @param list 保存结果的list
