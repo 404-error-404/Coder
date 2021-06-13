@@ -32,12 +32,15 @@ public class So0603 {
                 int prevIndex = map.get(counter);
                 maxLen = Math.max(maxLen, i - prevIndex);
             }
+            else {
+                map.put(counter, i);
+            }
         }
         return maxLen;
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{0,1};
+        int[] nums = new int[]{0,0,1,0,0,0,1,1};
         System.out.println(
                 new So0603().findMaxLength(nums)
         );
