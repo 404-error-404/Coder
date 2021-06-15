@@ -1,12 +1,6 @@
 package leetcode.SoByNumber;
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
+import leetcode.ListNode;
 
 public class So_2 {
 	static ListNode n1 = new ListNode(), n2 = new ListNode();
