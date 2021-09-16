@@ -3,7 +3,7 @@ package leetcode.So09;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
+
 
 /**
  * 
@@ -67,12 +67,12 @@ public class So0909 {
         return res;
     }
 
-    @Test
-    public void test0909(){
+    public static void main(String[] args) {
         String[] words = new String[]{
                 "ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"
         };
-        for (String s: fullJustify(words, 16)){
+        List<String> res = new So0909().fullJustify(words, 16);
+        for (String s: res){
             System.out.println(s);
         }
     }
