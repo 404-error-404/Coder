@@ -37,7 +37,7 @@ public class So6 {
         int rowNow = numRows - 2;
         //
         // 记录操作符和最大行序号
-        int op = -1, MaxRowIndex = numRows - 1;
+        int op = -1, maxRowIndex = numRows - 1;
         for (int i = numRows; i < chars.length; i++){
             // 添加空格
             int spaceNums;
@@ -53,7 +53,7 @@ public class So6 {
             if (rowNow == 0) {
                 op = 1;
             }
-            else if (rowNow == MaxRowIndex) {
+            else if (rowNow == maxRowIndex) {
                 op = -1;
             }
             rowNow += op;
