@@ -1,6 +1,6 @@
 package leetcode.SoByNumber;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author 张佳乐

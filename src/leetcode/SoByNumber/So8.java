@@ -1,6 +1,6 @@
 package leetcode.SoByNumber;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  *
@@ -49,7 +49,7 @@ public class So8 {
                 break;
             }
         }
-        Long ans = 0L;
+        long ans = 0L;
         // 开始读取数字，注意因为最大的int数字是10位的，所以这里最多往后读取10位
         int count = 0;
         for (; begin < sc.length; begin++){
@@ -72,7 +72,7 @@ public class So8 {
             return Integer.MIN_VALUE;
         }
         else {
-            return ans.intValue();
+            return (int) ans;
         }
     }
 
