@@ -1,6 +1,7 @@
 package leetcode.So09;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * 给你 二维 平面上两个 由直线构成的 矩形，请你计算并返回两个矩形覆盖的总面积。
