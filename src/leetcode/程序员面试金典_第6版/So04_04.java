@@ -1,4 +1,4 @@
-package leetcode.面试题;
+package leetcode.程序员面试金典_第6版;
 
 import org.junit.jupiter.api.Test;
 
