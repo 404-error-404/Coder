@@ -1,6 +1,6 @@
 package leetcode.SoByNumber;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * 编写一个函数来查找字符串数组中的最长公共前缀。

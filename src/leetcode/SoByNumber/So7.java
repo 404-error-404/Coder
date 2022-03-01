@@ -1,6 +1,6 @@
 package leetcode.SoByNumber;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * 给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。
