@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 
  * @date 2021/9/9 23:17
- * @author 张佳乐
+ * @author 小乐乐
 **/
 public class So0909 {
     public List<String> fullJustify(String[] words, int maxWidth) {

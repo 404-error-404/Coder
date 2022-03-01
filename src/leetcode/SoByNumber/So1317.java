@@ -14,7 +14,7 @@ package leetcode.SoByNumber;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/7/22 18:53
  **/
 public class So1317 {

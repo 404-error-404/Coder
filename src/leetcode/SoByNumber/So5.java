@@ -3,7 +3,7 @@ package leetcode.SoByNumber;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/9/26 20:24
  **/
 public class So5 {

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/longest-common-prefix
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/9/29 14:20
  */
 public class So14 {

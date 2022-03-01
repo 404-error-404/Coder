@@ -3,7 +3,7 @@ package leetcode.So05;
 import java.util.List;
 
 /**
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/5/1 23:15
  **/
 class Employee {

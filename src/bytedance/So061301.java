@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * 通过60%测试用例
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/6/13 19:01
  **/
 public class So061301 {

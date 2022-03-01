@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * https://leetcode-cn.com/problems/single-number-ii/
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/4/30 11:40
  **/
 public class So0430 {

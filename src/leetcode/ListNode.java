@@ -1,7 +1,7 @@
 package leetcode;
 
 /**
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/6/4 20:34
  **/
 public class ListNode {

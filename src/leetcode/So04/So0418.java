@@ -1,7 +1,7 @@
 package leetcode.So04;
 
 /**
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/4/18 9:41
  **/
 public class So0418 {

@@ -1,7 +1,7 @@
 package leetcode.SoByNumber;
 
 /**
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/4/25 11:05
  **/
 class TreeNode {

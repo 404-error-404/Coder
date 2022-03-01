@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
 
  本题中的空白字符只包括空格字符 ' ' 。
  除前导空格或数字后的其余字符串外，请勿忽略 任何其他字符。
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/9/25 21:41
  **/
 public class So8 {

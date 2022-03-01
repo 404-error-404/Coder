@@ -10,7 +10,7 @@ package leetcode.So05;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/xor-operation-in-an-array
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/5/7 11:13
  **/
 public class So0507 {

@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  * https://leetcode-cn.com/problems/frog-jump/
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/4/29 13:50
  */
 public class So0429 {

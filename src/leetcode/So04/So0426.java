@@ -9,7 +9,7 @@ import java.util.Arrays;
  *
  * 返回能在 D 天内将传送带上的所有包裹送达的船的最低运载能力。
  * https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/4/26 10:16
  **/
 public class So0426 {

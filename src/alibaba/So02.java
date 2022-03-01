@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 对这个字符串每次改动可以改成任意一个小写字母，问最小改动多少次可以分割成k个回文串
  * 比如aabbcc 3；最后结果要输出0
  * 比如abc 2；最后结果要输出1
- * @author 张佳乐
+ * @author 小乐乐
  * */
 public class So02 {
 	public static void main(String[] args) {

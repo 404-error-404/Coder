@@ -7,7 +7,7 @@ import java.util.Stack;
 
 /**
  * https://leetcode-cn.com/problems/employee-importance/
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/5/1 23:15
  **/
 public class So0501 {

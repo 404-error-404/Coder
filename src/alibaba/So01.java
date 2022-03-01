@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 其中B(n)是2^(n-1)阶0矩阵
  * 1 <= n <= 10
  * 输入n，输出对应的矩阵
- * @author 张佳乐
+ * @author 小乐乐
  * */
 public class So01 {
 	public static void main(String[] args) {

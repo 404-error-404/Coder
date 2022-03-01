@@ -11,7 +11,7 @@ import java.util.List;
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
- * @author 张佳乐
+ * @author 小乐乐
  * @date 2021/6/19 11:00
  **/
 public class So0619 {
