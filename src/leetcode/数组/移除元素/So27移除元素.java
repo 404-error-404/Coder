@@ -1,4 +1,4 @@
-package leetcode.数组;
+package leetcode.数组.移除元素;
 
 import org.junit.jupiter.api.Test;
 
