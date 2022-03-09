@@ -16,7 +16,7 @@ public class ListNode {
      * @param nums 列表各结点的值
      * @return     列表头结点
      */
-    public ListNode createList(int[] nums){
+    public static ListNode createList(int[] nums){
         int len = nums.length;
         if(len == 0){
             return null;
