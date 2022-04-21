@@ -1,5 +1,7 @@
 package leetcode.SoByNumber;
 
+import leetcode.TreeNode;
+
 import java.util.*;
 
 public class So102 {
