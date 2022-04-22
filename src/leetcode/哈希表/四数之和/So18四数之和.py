@@ -1,6 +1,7 @@
 from typing import List
 
 
+# 四数之和双指针方法在leetcode.双指针法.四数之和
 def fourSum(nums: List[int], target: int) -> List[List[int]]:
     nums.sort()
     # 先遍历一遍，去除超过四个的多余的元素
