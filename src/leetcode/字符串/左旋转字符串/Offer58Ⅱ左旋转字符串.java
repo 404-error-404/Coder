@@ -1,4 +1,4 @@
-package leetcode.字符串.坐旋转字符串;
+package leetcode.字符串.左旋转字符串;
 
 import org.junit.jupiter.api.Test;
 

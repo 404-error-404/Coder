@@ -20,6 +20,10 @@ import java.util.Set;
  * @date 2022/3/10 18:58
  */
 public class So面试题02_07_链表相交 {
+    /**
+     * 这里是方法一：使用set存储其中一个链表的所有节点，再遍历另一个
+     * 其他还有方法二：双指针依次遍历两个链表，遍历完一个之后遍历另一个，等两个指针相等的时候到达公共节点
+     */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         Set<ListNode> setA = new HashSet<>();
         while (null != headA) {
