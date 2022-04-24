@@ -29,13 +29,13 @@ public class So18四数之和 {
      * 意为求nums[2]=1元素的右边界，返回3
      */
     int getSameIntEdge(int[] nums, int idx, int next) {
-        int next_idx = idx + next;
-        while (next_idx >= 0 && next_idx < nums.length) {
-            if (nums[next_idx] != nums[idx]) {
+        int nextIdx = idx + next;
+        while (nextIdx >= 0 && nextIdx < nums.length) {
+            if (nums[nextIdx] != nums[idx]) {
                 return idx;
             } else {
-                idx = next_idx;
-                next_idx = idx + next;
+                idx = nextIdx;
+                nextIdx = idx + next;
             }
         }
         return idx;
