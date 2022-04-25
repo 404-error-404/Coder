@@ -2,9 +2,7 @@ package leetcode.栈与队列;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 给你一个整数数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。
@@ -43,6 +41,31 @@ public class So239滑动窗口最大值 {
         return res;
     }
 
+    /**
+     * 优先队列解法
+     */
+    public int[] maxSlidingWindow2(int[] nums, int k) {
+        int n = nums.length;
+        PriorityQueue<int[]> pq = new PriorityQueue<int[]>(new Comparator<int[]>() {
+            public int compare(int[] pair1, int[] pair2) {
+                return pair1[0] != pair2[0] ? pair2[0] - pair1[0] : pair2[1] - pair1[1];
+            }
+        });
+
+        for (int i = 0; i < k - 1; i++) {
+            pq.offer(new int[]{nums[i], i});
+        }
+        int[] ans = new int[n - k + 1];
+        for (int i = k - 1; i < n; i++) {
+            pq.offer(new int[]{nums[i], i});
+            while (pq.peek()[1] <= i - k) {
+                pq.poll();
+            }
+            ans[i - k + 1] = pq.peek()[0];
+        }
+        return ans;
+    }
+
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (k == 1) {
             return nums;
@@ -75,5 +98,6 @@ public class So239滑动窗口最大值 {
         int[] nums = {1, 2};
         int k = 2;
         System.out.println(Arrays.toString(maxSlidingWindow(nums, k)));
+        System.out.println(Arrays.toString(maxSlidingWindow2(nums, k)));
     }
 }
