@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 
 /**
- * @author 翼灵
+ * @author 小乐乐
  */
 public class SoTest {
 	public static void main(String[] args) {
