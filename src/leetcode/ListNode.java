@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 链表节点
+ *
  * @author 小乐乐
  * @date 2021/6/4 20:34
  **/
