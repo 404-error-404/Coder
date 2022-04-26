@@ -1,4 +1,4 @@
-package leetcode.栈与队列;
+package leetcode.栈与队列.滑动窗口最大值;
 
 import org.junit.jupiter.api.Test;
 
