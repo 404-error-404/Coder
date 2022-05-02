@@ -3,6 +3,9 @@ package leetcode.二叉树.二叉树的遍历.层序遍历;
 import leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * 给定一个二叉树，找出其最小深度。
  * <p>
@@ -19,6 +22,32 @@ import org.junit.jupiter.api.Test;
  * @date 2022/4/26 21:53
  */
 public class So111二叉树的最小深度 {
+    public int minDepth2(TreeNode root) {
+        if (null == root) {
+            return 0;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        int depth = 0;
+        while (!queue.isEmpty()) {
+            depth++;
+            int len = queue.size();
+            for (int i = 0; i < len; i++) {
+                TreeNode tmp = queue.remove();
+                if (null == tmp.left && null == tmp.right) {
+                    return depth;
+                }
+                if (null != tmp.left) {
+                    queue.add(tmp.left);
+                }
+                if (null != tmp.right) {
+                    queue.add(tmp.right);
+                }
+            }
+        }
+        return depth;
+    }
+
     public int minDepth(TreeNode root) {
         if (null == root) {
             return 0;
