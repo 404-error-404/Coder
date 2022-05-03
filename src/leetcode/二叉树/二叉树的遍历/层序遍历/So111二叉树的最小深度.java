@@ -72,6 +72,5 @@ public class So111二叉树的最小深度 {
             tmp.right = new TreeNode(i);
         }
         System.out.println(minDepth(root));
-
     }
 }
