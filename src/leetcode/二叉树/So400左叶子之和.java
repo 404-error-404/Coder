@@ -3,8 +3,6 @@ package leetcode.二叉树;
 import leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import java.util.Queue;
-
 /**
  * 给定二叉树的根节点 root ，返回所有左叶子之和。
  * <p>
@@ -17,6 +15,7 @@ import java.util.Queue;
  **/
 public class So400左叶子之和 {
     int res = 0;
+
     public void sumOfLeaves(TreeNode root, boolean isLeft) {
         if (isLeft && null == root.left && null == root.right) {
             this.res += root.val;
