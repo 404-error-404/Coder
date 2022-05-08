@@ -27,7 +27,7 @@ package leetcode.二叉树.二叉树的遍历.层序遍历;
  * @author 小乐乐
  * @date 2022/4/26 18:37
  */
-public class So117填充每个节点的下一个右侧节点指针II {
+public class So117填充每个节点的下一个右侧节点指针Ⅱ {
     public Node connect(Node root) {
         Node lineHead = root;
         while (null != lineHead) {

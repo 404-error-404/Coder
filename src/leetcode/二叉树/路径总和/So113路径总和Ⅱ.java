@@ -3,7 +3,6 @@ package leetcode.二叉树.路径总和;
 import leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import java.beans.Transient;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +18,7 @@ import java.util.List;
  * @author 小乐乐
  * @date 2022/5/3 11:41
  */
-public class So113路径总和II {
+public class So113路径总和Ⅱ {
     public void solution(TreeNode root, int curSum, int targetSum, List<Integer> path, List<List<Integer>> res) {
         curSum += root.val;
         path.add(root.val);
