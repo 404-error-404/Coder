@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * 给你一个二叉树的根节点 root ， 检查它是否轴对称。

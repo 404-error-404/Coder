@@ -1,7 +1,5 @@
 package leetcode.回溯;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,29 +32,26 @@ public class So51N皇后 {
         if (idx == n) {
             List<String> tmp = new ArrayList<>();
             for (char[] g : grid) {
-                tmp.add(String.copyValueOf(g));
+                tmp.add(Arrays.toString(g));
             }
             res.add(tmp);
             return;
         }
         for (int i = 0; i < n; i++) {
-            int idx45 = idx - i + n - 1;
-            int idx135 = idx + i;
-
-            if (used[i] || used45[idx45] || used135[idx135]) {
+            if (used[i] && used45[i] && used135[i]) {
                 continue;
             }
             grid[idx][i] = 'Q';
             used[i] = true;
-            used45[idx45] = true;
-            used135[idx135] = true;
+            used45[n + i - idx - 1] = true;
+            used135[n + idx - i - 1] = true;
 
             dfs(n, idx + 1);
 
             grid[idx][i] = '.';
             used[i] = false;
-            used45[idx45] = false;
-            used135[idx135] = false;
+            used45[n + i - idx - 1] = false;
+            used135[n + idx - i - 1] = false;
         }
     }
 
@@ -73,11 +68,5 @@ public class So51N皇后 {
         dfs(n, 0);
 
         return res;
-    }
-
-    @Test
-    public void test() {
-        List<List<String>> lists = solveNQueens(4);
-        System.out.println(lists.toString());
     }
 }

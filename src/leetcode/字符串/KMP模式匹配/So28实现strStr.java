@@ -1,7 +1,5 @@
 package leetcode.字符串.KMP模式匹配;
 
-import java.util.Locale;
-
 /**
  * 实现 strStr() 函数。
  * <p>

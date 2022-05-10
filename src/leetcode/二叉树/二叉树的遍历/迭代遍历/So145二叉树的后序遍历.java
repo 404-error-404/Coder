@@ -3,7 +3,6 @@ package leetcode.二叉树.二叉树的遍历.迭代遍历;
 import leetcode.TreeNode;
 import org.junit.jupiter.api.Test;
 
-import java.lang.management.ThreadMXBean;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
