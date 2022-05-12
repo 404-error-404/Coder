@@ -1,5 +1,7 @@
 package leetcode.贪心;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * 如果连续数字之间的差严格地在正数和负数之间交替，则数字序列称为 摆动序列 。第一个差（如果存在的话）可能是正数或负数。仅有一个元素或者含两个不等元素的序列也视作摆动序列。
  * <p>
@@ -30,13 +32,42 @@ public class So376摆动序列 {
         int res = 1;
         int preDiff = 0;
         // 找到一个上升或者下降区间
-        for (int i = 0; i < nums.length-1; i++) {
-            int curDiff = nums[i+1] - nums[i];
+        for (int i = 0; i < nums.length - 1; i++) {
+            int curDiff = nums[i + 1] - nums[i];
             if ((curDiff > 0 && preDiff <= 0) || (curDiff < 0 && preDiff >= 0)) {
                 res++;
                 preDiff = curDiff;
             }
         }
         return res;
+    }
+
+    public int wiggleMaxLengthDp(int[] nums) {
+        // dp[i][0]表示以i为峰谷的最大长度
+        // dp[i][1]表示以i为封顶的最大长度
+        int[][] dp = new int[nums.length][2];
+        dp[0][0] = 1;
+        dp[0][1] = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > nums[i - 1]) {
+                dp[i][0] = dp[i - 1][0];
+                dp[i][1] = dp[i - 1][0] + 1;
+            } else if (nums[i] < nums[i - 1]) {
+                dp[i][0] = dp[i - 1][1] + 1;
+                dp[i][1] = dp[i - 1][1];
+            } else {
+                dp[i][0] = dp[i - 1][0];
+                dp[i][1] = dp[i - 1][1];
+            }
+        }
+
+        return Math.max(dp[nums.length - 1][0], dp[nums.length - 1][1]);
+    }
+
+    @Test
+    public void test() {
+        int[] nums = new int[]{1, 17, 5, 10, 13, 15, 10, 5, 16, 8};
+        System.out.println(wiggleMaxLengthDp(nums));
     }
 }
