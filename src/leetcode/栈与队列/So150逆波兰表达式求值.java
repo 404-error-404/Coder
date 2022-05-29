@@ -14,7 +14,7 @@ import java.util.Stack;
  * 可以保证给定的逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/evaluate-reverse-polish-notation">https://leetcode-cn.com/problems/evaluate-reverse-polish-notation</a>
+ * 链接：https://leetcode-cn.com/problems/evaluate-reverse-polish-notation
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

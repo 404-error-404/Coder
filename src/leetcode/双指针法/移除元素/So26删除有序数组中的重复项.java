@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  * 判题标准:
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array">https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array</a>
+ * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

@@ -10,7 +10,7 @@ import java.util.List;
  * 给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal">https://leetcode-cn.com/problems/binary-tree-preorder-traversal</a>
+ * 链接：https://leetcode-cn.com/problems/binary-tree-preorder-traversal
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

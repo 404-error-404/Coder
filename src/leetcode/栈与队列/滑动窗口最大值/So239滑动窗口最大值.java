@@ -10,7 +10,7 @@ import java.util.*;
  * 返回 滑动窗口中的最大值 。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/sliding-window-maximum">https://leetcode-cn.com/problems/sliding-window-maximum</a>
+ * 链接：https://leetcode-cn.com/problems/sliding-window-maximum
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

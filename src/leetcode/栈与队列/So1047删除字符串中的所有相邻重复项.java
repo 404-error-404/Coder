@@ -12,7 +12,7 @@ import java.util.Stack;
  * 在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string">https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string</a>
+ * 链接：https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

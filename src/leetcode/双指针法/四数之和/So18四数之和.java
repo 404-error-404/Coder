@@ -15,7 +15,7 @@ import java.util.List;
  * 你可以按 任意顺序 返回答案 。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/4sum">https://leetcode-cn.com/problems/4sum</a>
+ * 链接：https://leetcode-cn.com/problems/4sum
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

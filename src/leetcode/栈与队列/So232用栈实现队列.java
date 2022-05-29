@@ -19,7 +19,7 @@ import java.util.Stack;
  * 你所使用的语言也许不支持栈。你可以使用 list 或者 deque（双端队列）来模拟一个栈，只要是标准的栈操作即可。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/implement-queue-using-stacks">https://leetcode-cn.com/problems/implement-queue-using-stacks</a>
+ * 链接：https://leetcode-cn.com/problems/implement-queue-using-stacks
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

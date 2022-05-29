@@ -6,7 +6,7 @@ package leetcode.双指针法.移除元素;
  * 请注意，必须在不复制数组的情况下原地对数组进行操作。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/move-zeroes">https://leetcode-cn.com/problems/move-zeroes</a>
+ * 链接：https://leetcode-cn.com/problems/move-zeroes
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐

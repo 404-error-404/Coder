@@ -10,7 +10,7 @@ import java.util.Stack;
  * 注意：如果对空文本输入退格字符，文本继续为空。
  * <p>
  * 来源：力扣（LeetCode）
- * 链接：<a href="https://leetcode-cn.com/problems/backspace-string-compare">https://leetcode-cn.com/problems/backspace-string-compare</a>
+ * 链接：https://leetcode-cn.com/problems/backspace-string-compare
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  *
  * @author 小乐乐
