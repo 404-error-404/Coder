@@ -37,8 +37,7 @@ public class Node {
         for (String node : nodes) {
             if ("null".equals(node)) {
                 queue.remove();
-            }
-            else {
+            } else {
                 Node tmp = new Node(Integer.parseInt(node), new ArrayList<>());
                 queue.peek().children.add(tmp);
                 queue.add(tmp);
