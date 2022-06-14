@@ -1,5 +1,9 @@
 package leetcode.字符串.KMP模式匹配;
 
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 /**
  * 实现 strStr() 函数。
  * <p>
@@ -21,11 +25,31 @@ package leetcode.字符串.KMP模式匹配;
  * @date 2022/3/13 22:34
  **/
 public class So28实现strStr {
+    int[] nextArray(String s) {
+        int[] next = new int[s.length()];
+        if (next.length == 0) {
+            return next;
+        }
+
+        // 初始化第一位
+        next[0] = -1;
+        int i = 0, j = -1;
+        while (i < next.length - 1) {
+            if (j == -1 || s.charAt(i) == s.charAt(j)) {
+                i++;
+                j++;
+                next[i] = j;
+            } else {
+                j = next[j];
+            }
+        }
+        return next;
+    }
+
     public int strStr(String haystack, String needle) {
         if (needle.length() == 0 || haystack.length() == 0) {
             return -1;
         }
-        needle.charAt(1);
         char[] needleChars = needle.toCharArray();
         // 构造next数组
         int[] next = new int[needleChars.length];
@@ -54,5 +78,11 @@ public class So28实现strStr {
             }
         }
         return -1;
+    }
+
+    @Test
+    public void test() {
+        String s = "ABABACD";
+        System.out.println(Arrays.toString(nextArray(s)));
     }
 }
