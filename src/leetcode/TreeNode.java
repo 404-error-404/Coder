@@ -69,4 +69,40 @@ public class TreeNode {
         }
         return root;
     }
+
+    public static TreeNode arrToTreeNode(Integer[] arr) {
+        if (arr[0] == null) {
+            System.out.println("根结点不为空");
+            return null;
+        }
+        TreeNode root = new TreeNode(arr[0]);
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+
+        int index = 1;
+        while (!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.remove();
+
+            if (index == arr.length) {
+                break;
+            }
+
+            Integer leftNumber = arr[index++];
+            if (leftNumber != null) {
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
+
+                if (index == arr.length) {
+                    break;
+                }
+            }
+
+            Integer rightNumber = arr[index++];
+            if (rightNumber != null) {
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
+        }
+        return root;
+    }
 }
