@@ -1,4 +1,4 @@
-package alibaba;
+package leetcode.alibaba;
 
 import java.util.Scanner;
 
