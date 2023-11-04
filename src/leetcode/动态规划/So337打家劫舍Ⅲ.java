@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Test;
  * @author 小乐乐
  * @date 2022/9/15 18:46
  */
-public class So打家劫舍Ⅲ {
+public class So337打家劫舍Ⅲ {
     private int childSum(TreeNode root) {
         int res = 0;
         if (root == null) {
