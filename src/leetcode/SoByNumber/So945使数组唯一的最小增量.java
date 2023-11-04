@@ -1,5 +1,7 @@
 package leetcode.SoByNumber;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
 /**
@@ -25,5 +27,16 @@ public class So945使数组唯一的最小增量 {
             }
         }
         return res;
+    }
+
+    @Test
+    public void test() {
+        String s = "©\uD83C\uDF7A";
+        System.out.println(s.length());
+        for (int i = 0; i < s.length(); i++) {
+            System.out.print(s.charAt(i));
+            System.out.println();
+        }
+        System.out.println(s.toCharArray());
     }
 }
